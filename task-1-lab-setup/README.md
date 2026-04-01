@@ -100,3 +100,7 @@ This lab helped in understanding the basics of penetration testing, including sc
 ## Screenshots
 
 All screenshots are included in this repository.
+
+## 🎥 Video Demonstration
+
+[Watch the video](https://www.linkedin.com/posts/thanmai-rapaka-290663324_cybersecurity-learning-apexplanet-ugcPost-7445103137117356033-Gnz2)
